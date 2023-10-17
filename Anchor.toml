@@ -1,0 +1,23 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+blog_program = "26wcvZXot16KQvfc9N8aTW4KhpmbYWUu469fEfny3d6d"
+
+
+[programs.devnet]
+blog_program = "26wcvZXot16KQvfc9N8aTW4KhpmbYWUu469fEfny3d6d"
+
+[registry]
+url = "https://api.apr.dev"
+
+#cluster = "Localnet"
+
+
+[provider]
+cluster = "devnet"
+wallet = "/home/valter/.config/solana/id.json"
+
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

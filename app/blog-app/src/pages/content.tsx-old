@@ -1,0 +1,20 @@
+import type { NextPage } from "next";
+import Head from "next/head";
+import { ContentView } from "../views";
+
+const Content: NextPage = (props) => {
+  return (
+    <div>
+      <Head>
+        <title>Blog</title>
+        <meta
+          name="description"
+          content="Solana Scaffold"
+        />
+      </Head>
+      <ContentView />
+    </div>
+  );
+};
+
+export default Content;
